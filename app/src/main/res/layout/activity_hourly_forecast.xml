@@ -25,6 +25,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="@string/no_daily_forecast_data"
-        android:id="@+id/textView"
+        android:id="@android:id/empty"
         android:textColor="#ffffffff"/>
 </RelativeLayout>
