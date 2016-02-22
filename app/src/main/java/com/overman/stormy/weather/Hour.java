@@ -9,6 +9,15 @@ public class Hour {
     private double mTemperature;
     private String mIcon;
     private String mTimezone;
+    private double mPrecipProbability;
+
+    public int getPrecipProbability() {
+        return (int) Math.round(mPrecipProbability * 100);
+    }
+
+    public void setPrecipProbability(double precipProbability) {
+        mPrecipProbability = precipProbability;
+    }
 
     public long getTime() {
         return mTime;

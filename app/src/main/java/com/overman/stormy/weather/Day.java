@@ -10,6 +10,15 @@ public class Day {
     private Double mTemperatureMin;
     private String mIcon;
     private String mTimezone;
+    private Double mPrecipProbability;
+
+    public int getPrecipProbability() {
+        return (int) Math.round(mPrecipProbability * 100);
+    }
+
+    public void setPrecipProbability(Double precipProbability) {
+        mPrecipProbability = precipProbability;
+    }
 
     public long getTime() {
         return mTime;
