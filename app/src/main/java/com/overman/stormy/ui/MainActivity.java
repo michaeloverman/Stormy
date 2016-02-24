@@ -196,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
             days[i] = day;
         }
 
+        //Log.d(TAG, "getDailyForecast() "+ days[1].getSummary());
         return days;
     }
 
