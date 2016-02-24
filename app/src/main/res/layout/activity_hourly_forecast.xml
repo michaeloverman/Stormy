@@ -11,13 +11,10 @@
     android:background="@drawable/bg_gradient"
     tools:context="com.overman.stormy.ui.HourlyForecastActivity">
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@android:id/list"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:id="@+id/recyclerView" />
 
     <TextView
         android:layout_width="wrap_content"

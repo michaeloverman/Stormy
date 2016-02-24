@@ -51,8 +51,8 @@ public class Day implements Parcelable {
         mTemperatureMax = temperatureMax;
     }
 
-    public Double getTemperatureMin() {
-        return mTemperatureMin;
+    public int getTemperatureMin() {
+        return (int) Math.round(mTemperatureMin);
     }
 
     public void setTemperatureMin(Double temperatureMin) {

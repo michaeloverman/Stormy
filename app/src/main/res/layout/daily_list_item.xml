@@ -3,7 +3,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="64dp"
+                android:paddingLeft="32dp"
                 android:paddingRight="32dp"
                 android:paddingBottom="4dp"
                 android:paddingTop="4dp"
@@ -24,9 +24,8 @@
         android:id="@+id/iconImageView"
         android:src="@drawable/cloudy_night"
         android:layout_centerVertical="true"
-        android:paddingLeft="5dp"
-        android:layout_toRightOf="@+id/circleImageView"
-        android:layout_toEndOf="@+id/circleImageView"/>
+        android:layout_toRightOf="@+id/minTempLabel"
+        android:layout_toEndOf="@+id/minTempLabel"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,4 +51,14 @@
         android:textColor="#f25019"
         tools:text="109"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-22"
+        android:id="@+id/minTempLabel"
+        android:layout_alignBottom="@+id/circleImageView"
+        android:layout_toRightOf="@+id/circleImageView"
+        android:layout_toEndOf="@+id/circleImageView"
+        android:textColor="#00e5ff"/>
 </RelativeLayout>
