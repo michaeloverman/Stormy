@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getForecast(double latitude, double longitude) {
         String apiKey = "9f6e5e7ba5dd639b9f09f04436e0a37c";
-        String forecastUrl = "https://api.forecast.io/forecast/" +
+        String forecastUrl = "https://api.darksky.net/forecast/" +
                 apiKey + "/" + latitude + "," + longitude;
 
         if (isNetworkAvailable()) {
